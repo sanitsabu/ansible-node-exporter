@@ -1,0 +1,8 @@
+---
+- name: Install Prometheus Node Exporter
+  hosts: nodes
+  become: true
+  vars_files:
+    - ../group_vars/all.yml
+  roles:
+    - node_exporter
